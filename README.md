@@ -1,5 +1,5 @@
 # TASK : Visualise OW_ARMV3 in RVIZ
-Rviz is a visualisation tool which is used to visuial the ROS application, So we have to import the URDF of **OW_ARMV3** in the rviz and implement a straight line trajectory or any random trajectory.  To achieve the task I have used Moveit setup assistant which generate the moveit configuration package of the arm. So the configuration package is all we need. But before using the configuration pakage I have visualised the arm using a simple launch file configuration. I have all the things  in detail below
+Rviz is a visualisation tool which is used to visuial the ROS application, So we have to import the URDF of **OW_ARMV3** in the rviz and implement a straight line trajectory or any random trajectory.  To achieve the task I have used Moveit setup assistant which generate the moveit configuration package of the arm. So the moveit configuration package is all we need. But before using the moveit configuration pakage I have visualised the arm using a simple launch file configuration. I have all the things  in detail below
 
 
 # Software Prerequisites
@@ -32,11 +32,11 @@ I have created a ROS workspace **orangewood_ws** which have following directory 
 # orangewoo_pkg
 This ros package contain two launch file `robot_rviz.launch` and `robot.launch` . The `robot_rviz.launch` is used to only visualise the robot arm in the riviz without moveit and motion planning.  The `robot.launch` is used to launch the moveit config launch file which is named as `demo.launch` and a ros node `node_joint_angles.py` which set the two different joint angles one and after another one is straight line trajectory and other one is random trajectory path.
 ###  Issue Faced
-While using the moveit setup assistant  to configure moveit pkg I faced an issue. I am unable to define pose    in moveit setup assistant. I am sharing the snap of the issue below
+While using the moveit setup assistant  to configure moveit pkg I faced an issue.I am unable to define pose  in moveit setup assistant.Sharing the snap of the issue below
 
 ![Issue](/images/issue.png)
 
-I can above GUI to define any pose of robot. But I am unable to drag the joint angle slider and input in the box. I found the issue on ROS Answers [here.](https://answers.ros.org/question/311838/i-have-a-problem-with-define-robot-poses-in-moveit-setup-assistant/) So, I made some changes in the urdf which resolves the issue.
+The above GUI is used to define any pose of robot. But I am unable to drag the joint angle slider and input in the box. I found the issue on ROS Answers [here.](https://answers.ros.org/question/311838/i-have-a-problem-with-define-robot-poses-in-moveit-setup-assistant/) So, I made some changes in the urdf which resolves the issue.
 Here is a part of urdf where one of the joint of robot arm is defined :
 ```xml
  <joint
