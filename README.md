@@ -142,3 +142,9 @@ This ros package is generated using moveit setup assistant it have all the movei
 
 # OW_arm42v3 
 This is the given ros package which conatain the robot model description files and urdf that is used to import the urdf when only using `robot_rviz.launch`
+
+
+## Note
+Before launching the launch files, make the ros node `node_joint_angles.py` which is located in the script folder of the pkg **orangewood_pkg** executable using the following command
+ 
+ `Sudo chmod +x node_joint_angles.py`
