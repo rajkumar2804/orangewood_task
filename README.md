@@ -32,10 +32,7 @@ This ros package contain two launch file `robot_rviz.launch` and `robot.launch` 
 ###  Issue Faced
 While using the moveit setup assistant  to configure moveit pkg I faced an issue. I am unable to define pose    in moveit setup assistant. I am sharing the snap of the issue below
 
-![Issue](http://drive.google.com/file/d/1wz0lkgktHM_rQ477fki2wcb_vQctpc3-/view?usp=sharing)
-<p>
-    <img src="http://drive.google.com/file/d/1wz0lkgktHM_rQ477fki2wcb_vQctpc3-/view?usp=sharing" width="220" height="240" />
-</p>
+![Issue](/images/issue.png)
 
 I can above GUI to define any pose of robot. But I am unable to drag the joint angle slider and input in the box. I found the issue on ROS Answers [here.](https://answers.ros.org/question/311838/i-have-a-problem-with-define-robot-poses-in-moveit-setup-assistant/) So, I made some changes in the urdf which resolves the issue.
 Here is a part of urdf where one of the joint of robot arm is defined :
@@ -67,8 +64,9 @@ I changed the effort and velocity value to **150** and **3.14** respectively, bu
 
 ## Launching robot_rviz.launch
 
-Before launching the launch file make sure that joint_state_publisher_gui package is installed on the system to get gui window of joints so that we can interact with the joints of the robot. Following video shows the same:
-[![robot_rviz.launch](https://drive.google.com/file/d/1oXpeKVcIxBqgkrFaZ3cZJbGohG31deEz/view?usp=sharing)](https://drive.google.com/file/d/16NpTzJ7Qa2VLTQBtPDbATi37RVX9BxeK/view?usp=sharing)
+Before launching the launch file make sure that joint_state_publisher_gui package is installed on the system to get gui window of joints so that we can interact with the joints of the robot. The following video shows the same, click on the image:
+
+[![robot_rviz_launch](/images/thumbnail.png)](https://drive.google.com/file/d/16NpTzJ7Qa2VLTQBtPDbATi37RVX9BxeK/view?usp=sharing)
 
 **Launch File** :
 ```xml
