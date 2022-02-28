@@ -1,0 +1,13 @@
+controller_list:
+  - name: fake_planning_group_arm_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - BJ
+      - SJ
+      - EJ
+      - W1J
+      - W2J
+      - W3J
+initial:  # Define initial robot poses.
+  - group: planning_group_arm
+    pose: all_zeroes
