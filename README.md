@@ -26,6 +26,8 @@ ROS distribution I have used is ROS Melodic and the Operating System is Ubuntu 1
 
 I have created a ROS workspace **orangewood_ws** which have following directory and package hierarchy
 
+![File](/images/file_hierarcy.png)
+
 
 # orangewoo_pkg
 This ros package contain two launch file `robot_rviz.launch` and `robot.launch` . The `robot_rviz.launch` is used to only visualise the robot arm in the riviz without moveit and motion planning.  The `robot.launch` is used to launch the moveit config launch file which is named as `demo.launch` and a ros node `node_joint_angles.py` which set the two different joint angles one and after another one is straight line trajectory and other one is random trajectory path.
