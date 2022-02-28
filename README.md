@@ -123,8 +123,9 @@ def main():
   ```
   The node first wait for rviz to come up and then it create an instance of ArmMoveit class which is used to send the goal to the arm. There are two joints angle goal `lst_joint_angle_1` which follow a straight trajectory and after 10 secs  `lst_joint_angle_2` will be executed which follow a random  valid path trajcetory.
   
-  The follwing video demonstarte the same:
-  [![robot_rviz.launch](https://drive.google.com/file/d/1oXpeKVcIxBqgkrFaZ3cZJbGohG31deEz/view?usp=sharing)]( https://drive.google.com/file/d/1w5RedSN03IrzQ-8_mprYMg7Yw6f4GKvh/view?usp=sharing)
+  The follwing video demonstarte the same, click on the image:
+  
+  [![robot_launch](/images/thumnail2.png)]( https://drive.google.com/file/d/1w5RedSN03IrzQ-8_mprYMg7Yw6f4GKvh/view?usp=sharing)
 
 **Launch File** : 
 ```xml
