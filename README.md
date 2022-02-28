@@ -1,5 +1,5 @@
 # TASK : Visualise OW_ARMV3 in RVIZ
-Rviz is a visualisation tool which is used to visuial the ROS application, So we have to import the URDF of **OW_ARMV3** in the rviz and implement a straight line trajectory or any random trajectory.  To achieve the task I have used Moveit setup assistant which generate the moveit configuration package of the arm. So the moveit configuration package is all we need. But before using the moveit configuration pakage I have visualised the arm using a simple launch file configuration. I have all the things  in detail below
+Rviz is a visualisation tool which is used to visualise ROS application, So we have to import the URDF of **OW_ARMV3** in the rviz and implement a straight line trajectory or any random trajectory.  To achieve the task I have used Moveit setup assistant which generate the moveit configuration package of the arm. So the moveit configuration package is all we need. But before using the moveit configuration pakage I have visualised the arm using a simple launch file configuration. I have all the things  in detail below
 
 
 # Software Prerequisites
